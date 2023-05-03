@@ -1,0 +1,71 @@
+.header {
+  background-color: #242938;
+  background: linear-gradient(
+    180deg,
+    #242938 70.31%,
+    rgba(0, 0, 0, 0.491228) 83.33%,
+    rgba(0, 0, 0, 0.276316) 90.62%,
+    rgba(36, 41, 56, 0) 100%
+  );
+
+  --size: 50px;
+
+  .icons {
+    img:nth-child(1) {
+      top: 55%;
+      left: 75%;
+
+      width: calc(var(--size) + 10px);
+      // transform: rotate(-25deg);
+    }
+    img:nth-child(2) {
+      top: 50%;
+      left: 30%;
+
+      width: calc(var(--size) + 5px);
+      // transform: rotate(10deg);
+    }
+    img:nth-child(3) {
+      top: 55%;
+      left: 90%;
+
+      width: calc(var(--size) + 10px);
+      // transform: rotate(15deg);
+    }
+    img:nth-child(4) {
+      top: 10%;
+      left: 10%;
+
+      width: calc(var(--size) + 10px);
+      // transform: rotate(15deg);
+    }
+    img:nth-child(5) {
+      top: 45%;
+      left: 15%;
+
+      width: calc(var(--size) - 10px);
+      // transform: rotate(30deg);
+    }
+    img:nth-child(6) {
+      top: 10%;
+      left: 30%;
+
+      width: calc(var(--size) + 10px);
+      // transform: rotate(-10deg);
+    }
+    img:nth-child(7) {
+      top: 30%;
+      left: 90%;
+
+      width: calc(var(--size) + 10px);
+      // transform: rotate(-40deg);
+    }
+    img:nth-child(8) {
+      top: 15%;
+      left: 70%;
+
+      width: calc(var(--size) + 10px);
+      // transform: rotate(15deg);
+    }
+  }
+}
