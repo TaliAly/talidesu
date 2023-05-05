@@ -1,28 +1,51 @@
 import Link from 'next/link'
+import useResponsive from '@/hooks/useResponsive'
 import { LargeSuitcase, GitHub, LinkedIn, Twitter } from 'iconoir-react'
 
 export default function Navbar() {
+  const { isDesktop, isMobile, isTablet } = useResponsive()
+
   return (
-    <div className='flex flex-row justify-center md:justify-between items-center p-4 gap-5'>
-      <Link href='mailto: allysonnomuraga@gmail.com' className='flex flex-row gap-2'>
-        <LargeSuitcase /> allysonnomuraga@gmail.com
+    <div className='flex flex-row justify-center md:justify-between items-center px-4 py-1 gap-5 text-slate-800 text-sm'>
+      <Link href='mailto: allysonnomuraga@gmail.com' className='group'>
+        <p className='flex flex-row gap-2 group-hover:scale-110 transition'>
+          <LargeSuitcase className='group-hover:scale-125 transition' />
+          allysonnomuraga@gmail.com
+        </p>
       </Link>
 
-      <div className='hidden md:flex flex-row gap-5'>
-        <div className='flex flex-row gap-2'>
-          <GitHub />
-          <Link href=''>github</Link>
-        </div>
+      {isDesktop && (
+        <div className='flex flex-row gap-x-5'>
+          <LinkIcon link='https://github.com/TaliAly'>
+            <GitHub />
+            <p>github</p>
+          </LinkIcon>
 
-        <div className='flex flex-row gap-2'>
-          <Twitter />
-          <Link href=''>twitter</Link>
+          <LinkIcon link='https://twitter.com/Allynomus'>
+            <Twitter />
+            <p>twitter</p>
+          </LinkIcon>
+          <LinkIcon link='#'>
+            <LinkedIn />
+            <p>linkedin</p>
+          </LinkIcon>
         </div>
-        <div className='flex flex-row gap-2'>
-          <LinkedIn />
-          <Link href=''>linkedin</Link>
-        </div>
-      </div>
+      )}
     </div>
+  )
+}
+
+interface linkProps {
+  children: React.ReactNode
+  link: string
+}
+const LinkIcon = ({ children, link }: linkProps) => {
+  return (
+    <Link
+      href={link}
+      className='flex flex-row gap-2 hover:bg-slate-200 hover:rounded-md transition p-2'
+    >
+      {children}
+    </Link>
   )
 }

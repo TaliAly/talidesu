@@ -42,7 +42,8 @@ export default function AboutMe() {
             <ArrowTr strokeWidth={2} /> Works on
           </Link>
           <Link
-            href='/'
+            href='https://discord.gg/fazt-community-466723723853037589'
+            target='_blank'
             className='flex gap-2 rounded-md border border-neutral-950 px-4 py-2 hover:bg-neutral-900 transition hover:text-white'
           >
             <ArrowTr strokeWidth={2} /> I like to talk in

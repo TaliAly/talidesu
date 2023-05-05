@@ -10,11 +10,14 @@ export default function Content() {
         <Card title='Frameworks' Icon={<GitHub />}>
           <h2>Next JS, Tailwind CSS, React, Redux, Jest, Enzyme, Cypress,</h2>
         </Card>
-        <Card title='Frameworks' Icon={<GitHub />}>
-          <h2>Next JS, Tailwind CSS, React, Redux, Jest, Enzyme, Cypress,</h2>
+        <Card title='Tools' Icon={<GitHub />}>
+          <h2>Github, VScode, Tailwind CSS, Material UI, and more than that!</h2>
         </Card>
-        <Card title='Frameworks' Icon={<GitHub />}>
-          <h2>Next JS, Tailwind CSS, React, Redux, Jest, Enzyme, Cypress,</h2>
+        <Card title='Design' Icon={<GitHub />}>
+          <h2>
+            I like to use Figma to design! But I get the most of Dribble, Mockup io and other cools
+            tools
+          </h2>
         </Card>
       </div>
 
@@ -23,7 +26,7 @@ export default function Content() {
       <div className='flex gap-y-28 flex-col'>
         <h2 className='text-3xl'>Projects</h2>
 
-        <div className='grid grid-cols-1 md:grid-cols-3 sm:gap-4 gap-y-20'>
+        <div className='grid grid-cols-1 md:grid-cols-3 sm:gap-4 gap-y-20 place-items-center'>
           <CardImage
             title='Tremufly'
             img='https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
