@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 
 interface Props {
   children: React.ReactNode
@@ -7,7 +10,7 @@ interface Props {
 
 export default function Layout({ children, title }: Props) {
   return (
-    <div>
+    <div className={poppins.className}>
       <Head>
         <title>{title}</title>
         <link rel='icon' href='/cuteAvatar.svg' />
