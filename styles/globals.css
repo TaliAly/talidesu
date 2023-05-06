@@ -5,11 +5,9 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background: 255, 255, 255;
-  --font: sans-serif;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background));
-  font-family: 'Poppins', sans-serif;
 }

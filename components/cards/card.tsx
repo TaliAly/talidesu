@@ -10,7 +10,7 @@ export interface CardProps {
 export default function Card({ children, Icon, title }: CardProps) {
   return (
     <motion.div
-      className='rounded-[10px] border-2 border-black p-1 max-w-xl transition'
+      className='rounded-[10px] border-2 border-black p-1 max-w-xl h-full transition'
       initial='hidden'
       whileInView='visible'
       viewport={{ once: true }}

@@ -12,12 +12,12 @@ export default function HeaderIcons({ Class }: Props) {
 
   return (
     <div className={`${Class} opacity-0 md:opacity-100 transition-opacity`}>
-      {icons.map(({ title, left, top, link }: iconsProps, index) => {
+      {icons.map(({ title, left, top, link, deg }: iconsProps, index) => {
         return (
           <Link
             key={index}
             href={link}
-            className='absolute aspect-square opacity-70'
+            className={`absolute aspect-square opacity-70`}
             style={{
               top: moveItOut({ left, top }).top,
               left: moveItOut({ left, top }).left,
@@ -26,7 +26,7 @@ export default function HeaderIcons({ Class }: Props) {
             <img
               src={title}
               alt='images code'
-              className='aspect-square w-[70px] h-[70px] object-contain'
+              className='aspect-square min-w-[50px] min-h-[50px] w-[4vw] h-[4vw] object-contain'
             />
           </Link>
         )

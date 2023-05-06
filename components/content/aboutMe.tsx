@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function AboutMe() {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-4'>
+    <div className='flex flex-row items-center justify-center gap-5'>
       <motion.div
         className='flex flex-col items-center justify-center gap-4'
         initial='hidden'
@@ -21,7 +21,7 @@ export default function AboutMe() {
       </motion.div>
 
       <motion.div
-        className='flex flex-col p-1 gap-4'
+        className='flex flex-col justify-center p-1 gap-4 max-w-[50%]'
         initial='hidden'
         whileInView='visible'
         viewport={{ once: true }}
