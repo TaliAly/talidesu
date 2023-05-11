@@ -19,11 +19,11 @@ const Images = [
     link: 'https://www.figma.com/',
   },
   {
-    img: 'typescript.svg',
+    img: '/typescript.svg',
     link: 'https://www.typescriptlang.org/',
   },
   {
-    img: 'tailwindcss.svg',
+    img: '/tailwindcss.svg',
     link: 'https://tailwindcss.com/',
   },
 ]
