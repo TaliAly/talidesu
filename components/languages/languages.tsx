@@ -7,23 +7,23 @@ interface Props {
 
 const Images = [
   {
-    img: '/nextjs.svg',
+    img: '/img/nextjs.svg',
     link: 'https://nextjs.org/',
   },
   {
-    img: '/react.svg',
+    img: '/img/react.svg',
     link: 'https://reactjs.org/',
   },
   {
-    img: '/figma.svg',
+    img: '/img/figma.svg',
     link: 'https://www.figma.com/',
   },
   {
-    img: '/typescript.svg',
+    img: '/img/typescript.svg',
     link: 'https://www.typescriptlang.org/',
   },
   {
-    img: '/tailwindcss.svg',
+    img: '/img/tailwindcss.svg',
     link: 'https://tailwindcss.com/',
   },
 ]
