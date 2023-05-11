@@ -3,14 +3,14 @@ import useResponsive from '@/hooks/useResponsive'
 import { LargeSuitcase, GitHub, LinkedIn, Twitter } from 'iconoir-react'
 
 export default function Navbar() {
-  const { isDesktop, isMobile, isTablet } = useResponsive()
+  const { isDesktop } = useResponsive()
 
   return (
-    <div className='flex flex-row justify-center md:justify-between items-center px-4 py-1 gap-5 text-slate-800 text-sm'>
-      <Link href='mailto: allysonnomuraga@gmail.com' className='group'>
-        <p className='flex flex-row gap-2 group-hover:scale-110 transition'>
-          <LargeSuitcase className='group-hover:scale-125 transition' />
-          allysonnomuraga@gmail.com
+    <div className='flex flex-row justify-center lg:justify-between items-center px-4 py-1 gap-5 text-slate-800 text-[16px]'>
+      <Link href='mailto: allysonnomuraga@gmail.com'>
+        <p className='flex flex-row gap-2 text-[20px] items-center'>
+          <LargeSuitcase className='hidden lg:block' />
+          allyson@nomuraga.design
         </p>
       </Link>
 

@@ -1,3 +1,4 @@
+import style from './cardImage.module.scss'
 import { CardProps } from './card'
 import Link from 'next/link'
 
@@ -10,14 +11,15 @@ export default function CardImage({ img, title, about }: Props) {
   return (
     <Link
       href='#'
-      className='flex flex-col items-center border-2 border-black p-4 rounded aspect-[397/362] w-full max-w-[350px] relative hover:scale-105 transition duration-300 ease-in-out'
+      className='flex flex-col items-center p-4 rounded aspect-[347/230] w-full max-w-[350px] relative'
     >
       <img
         src={img}
         alt={title}
-        className='absolute rounded-lg top-[-40px] aspect-[347/230] object-cover w-[85%] border-2 border-black'
+        className={` ${style.cardImage} absolute rounded-lg aspect-[347/230] object-cover w-full border-2 border-black`}
       />
-      <div className='pt-[50%] flex flex-col items-center gap-1'>
+
+      <div className='flex flex-col  justify-center items-center gap-1 absolute text-white w-full h-full'>
         <h3 className='text-center text-4xl mt-2'>{title}</h3>
         <p className='text-center text-sm mt-1'>{about}</p>
       </div>
