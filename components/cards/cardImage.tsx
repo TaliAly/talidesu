@@ -1,8 +1,8 @@
 import style from './cardImage.module.scss'
-import { CardProps } from './card'
 import Link from 'next/link'
 
-interface Props extends Omit<CardProps, 'children'> {
+interface Props {
+  title: string
   img: string
   about: string
 }
